@@ -4,10 +4,14 @@ import Board from './components/Board';
 
 function App() {
   const [board, setBoard] = useState(Array(9).fill(null));
-  const handleBoxClick = ()=>{
-    
+  const handleBoxClick = (squareID)=>{
     const updatedBoard = board.map((value, id) => {
+      if (id === squareID){
       return ("X");
+      }
+      else{
+        return( value );
+      }
     });
     setBoard(updatedBoard);
   }
