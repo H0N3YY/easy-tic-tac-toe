@@ -1,13 +1,6 @@
 .score{
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    border: 0.1rem solid rgb(9, 92, 20);
-    border-radius: 0.7rem;
-    margin:1rem auto;
+    margin: 0.8rem auto;
     font-weight: bold;
-    font-size: calc(4px + 3vmin);
-    
   }
   
   .x-score {
@@ -22,18 +15,18 @@
     padding: 15px;
   }
   .o-tie {
-    color: rgb(0, 3, 86);
+    color: rgb(0, 0, 0);
     width: 100%;
-    padding: 15px;
+    padding: 1px;
   }
   .xScoreboard {
-    border-bottom: 5px solid rgb(197, 1, 1);
+    border-bottom: 1px solid rgb(197, 1, 1);
   }
   
   .oScoreboard {
-    border-bottom: 5px solid rgb(68, 68, 68);
+    border-bottom: 1px solid rgb(0, 0, 0);
   }
   
   .oTie {
-    border-bottom: 5px solid rgb(0, 3, 86);
+    border-bottom: 1px solid rgb(0, 0, 0);
   }
