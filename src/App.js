@@ -30,6 +30,15 @@ function App() {
     setXTurnPlay(!xTurnPlay);
   }
 
+  const checkWinner = (updatedBoard) =>{
+for( let i = 0; i < WIN_CONDITIONS.length; i++){
+  const [x, y, z] = WIN_CONDITIONS[i]; //[0, 1, 2] itp...
+  if(updatedBoard[x] && updatedBoard[x] === updatedBoard[y] && updatedBoard[y] === updatedBoard[z]){
+    console.log("winner");
+  }
+}
+  };
+
   return (
     <div className="App">
       <header className="App-header">
