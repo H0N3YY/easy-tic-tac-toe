@@ -1,7 +1,7 @@
 .square {
     background-color: #fff;
     border: none;
-    border: 0.2rem solid black;
+    border: 0.1rem solid rgb(9, 92, 20);
     border-radius: 1rem;
     width: 5rem;
     height: 5rem;
@@ -19,5 +19,5 @@
   }
   
   .o {
-    color: rgb(0, 0, 0);
+    color: rgb(25, 89, 157);
   }

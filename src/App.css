@@ -4,7 +4,7 @@
 
 
 .App-header {
-  background-color: #ffffff;
+  background-image: url("./assets/img.jpg");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(0, 0, 0);
+}
+
+.App-card{
+  background-color: rgba(255, 255, 255, 0.247);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0px 0px 15px #000000;
 }
 
 

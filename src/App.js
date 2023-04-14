@@ -1,6 +1,7 @@
 import {useState} from "react";
 import './App.css';
 import Board from './components/Board';
+import Score from "./components/Score";
 
 function App() {
   const [board, setBoard] = useState(Array(9).fill(null));
@@ -42,8 +43,11 @@ for( let i = 0; i < WIN_CONDITIONS.length; i++){
   return (
     <div className="App">
       <header className="App-header">
+        <div className="App-card">
        <h1> Tic-Tac-Toe</h1>
+       <Score/>
        <Board board={board} onClick={handleBoxClick}/>
+       </div>
       </header>
     </div>
   );
