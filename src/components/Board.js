@@ -1,21 +1,18 @@
+
 import "./Board.css";
 import Square from "./Square";
 
-const Board = () => {
-
+const Board = ({ board, onClick, id }) => {
   return (
-    <div class="board">
-     <Square/>
-     <Square/>
-     <Square/>
-     <Square/>
-     <Square/>
-     <Square/>
-     <Square/>
-     <Square/>
-     <Square/>
+    <div className="board">
+      {board.map((item, id) => (
+        <Square
+          value={item}
+          onClick={() => onClick(id)}
+        />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Board
+export default Board;

@@ -1,12 +1,9 @@
 import React from "react";
 import "./Square.css";
 
-const Square = ({ value, onClick }) => {
-  //assigning clss name depending on the value
-  const style = value === "X" ? "square x" : "square o";
-
+const Square = ({ value, onClick, key,  }) => {
   return (
-    <button className={style} onClick={onClick}>
+    <button key={key} className="square" onClick={onClick}>
       {value}
     </button>
   );
