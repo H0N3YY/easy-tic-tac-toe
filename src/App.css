@@ -5,22 +5,49 @@
 
 .App-header {
   background-image: url("./assets/img.jpg");
+  background-size: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.884);
 }
 
 .App-card{
   background-color: rgba(255, 255, 255, 0.247);
   backdrop-filter: blur(10px);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 2%;
   box-shadow: 0px 0px 15px #000000;
+  
 }
 
+
+button {
+  background-color: rgb(0, 165, 102);
+  padding: 10px;
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.548);
+  margin: 0.5em;
+ width: 40%;
+}
+
+
+button:hover {
+  background-color: rgba(40, 191, 60, 0.648);
+  box-shadow: 0px 0px 5px #000000;
+}
+
+.gameOver{
+  width: 100%;
+  background-color: rgb(8, 159, 151);
+}
+
+.gameOver:hover {
+  background-color: rgba(15, 232, 221, 0.648);
+  box-shadow: 0px 0px 5px #000000;
+}
 
 
